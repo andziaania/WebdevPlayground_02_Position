@@ -8,7 +8,7 @@
 body {
   --pink-color: hsl(310, 57%, 71%);
   --lightblue-color: hsl(180, 54%, 69%);
-  background: linear-gradient(90deg, var(--pink-color), var(--lightblue-color));
+  background: linear-gradient(90deg, var(--lightblue-color), var(--pink-color));
   font-size: 1rem;
   font-family: Lato, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
@@ -21,12 +21,16 @@ main {
 
 #photo {
   background: url("https://static.bhphotovideo.com/explora/sites/default/files/styles/top_shot/public/ts-space-sun-and-solar-viewing-facts-versus-fiction.jpg?itok=gaBs6QMS");
-  width: 40vh;
+  // background-position: center;
+  // width: calc(100vw - 55rem);
+  // height: calc(100vh - 30rem);
+  width: 35vw;
   height: 40vh;
   max-width: 40vw;
   max-height: 40vh;
   z-index: 3;
-  border-radius: 10%;
+  border-radius: 10px;
+  box-shadow: 10px 30px 50px -20px rgb(70, 70, 70);
 
   position: absolute;
   top: 0;
@@ -35,13 +39,13 @@ main {
 
 #bio {
   position: absolute;
-  top: 5rem;
-  left: 2rem;
-  border-radius: 5%;
-  // max-height: 10rem;
+  top: 6vh;
+  left: 8vw;
+  border-radius: 10px;  //in px, not %
   max-width: 60vw;
   z-index: 2;
   background: white;
+  box-shadow: 10px 30px 50px -20px grey;
   
   #bio-content {
     padding: 14vh 10vw 5vh 30vw;
@@ -49,14 +53,14 @@ main {
   }
 
   #links {
-    // position: absolute;
-    // top: 45vh;
-    // left: 30vw;
     padding-left: 30vw;
     z-index: 4;
-    img {
-      width: 2rem;
-      height: 2rem;
+    a {
+      padding: 1rem;
+    }
+    i {
+      font-size: 2rem;
+      color: var(--pink-color);
     }
   }
 
@@ -69,7 +73,7 @@ main {
       font-size: 2rem;
     }
     .info {
-      color: var(--pink-color);
+      color: var(--lightblue-color);
     }
   }
 }
