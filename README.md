@@ -4,6 +4,7 @@
 
 ### Covers:
 - [x] **css positioning.** position: absolute/relative; units: vh, vw, vmax, em, rem
+- [x] **attention to proper bahaviour when screen resizing and in mobile view**
 - [x] **css variables**
 - [x] **fontawesome icons**
 - [x] **css:** border-radius in px; box-shadow; rgb(); hsl();
